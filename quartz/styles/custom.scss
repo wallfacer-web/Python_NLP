@@ -1,0 +1,76 @@
+@use "./base.scss";
+
+:root[saved-theme="light"] {
+  --site-accent: #0f6b6f;
+  --site-warm: #d17b49;
+}
+
+:root[saved-theme="dark"] {
+  --site-accent: #78c2c4;
+  --site-warm: #f0a065;
+}
+
+article.popover-hint,
+.page article {
+  line-height: 1.8;
+}
+
+.page article h1 {
+  letter-spacing: -0.02em;
+}
+
+.page article h2 {
+  margin-top: 2rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--lightgray);
+}
+
+.page article a.internal {
+  text-decoration: none;
+  border-bottom: 1px solid color-mix(in srgb, var(--secondary) 45%, transparent);
+}
+
+.page article ul {
+  padding-left: 1.1rem;
+}
+
+.page article li {
+  margin: 0.35rem 0;
+}
+
+.page article blockquote {
+  border-left: 4px solid var(--tertiary);
+  background: color-mix(in srgb, var(--tertiary) 8%, transparent);
+  border-radius: 0.4rem;
+}
+
+.page article code {
+  font-size: 0.92em;
+}
+
+.page article img {
+  border-radius: 0.7rem;
+}
+
+.page article hr {
+  margin: 2rem 0;
+}
+
+@media (max-width: 800px) {
+  .page {
+    grid-template-columns: 1fr;
+  }
+
+  .page article {
+    padding-inline: 0.25rem;
+  }
+
+  .sidebar.left,
+  .sidebar.right {
+    gap: 0.75rem;
+  }
+
+  .search {
+    width: 100%;
+  }
+}

@@ -1,0 +1,13 @@
+.obsidian/
+.smart-env/
+notebooklm-py/
+__pycache__/
+*.pyc
+node_modules/
+Thumbs.db
+.DS_Store
+给新Codex的NotebookLM使用说明.md
+public/
+_quartz_upstream/
+_quartz_v4.zip
+quartz/.quartz-cache/
