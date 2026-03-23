@@ -14,8 +14,8 @@
   "scripts": {
     "quartz": "./quartz/bootstrap-cli.mjs",
     "prepare:content": "powershell -ExecutionPolicy Bypass -File scripts/export-public-content.ps1",
-    "site:build": "npm run prepare:content && npx quartz build",
-    "site:dev": "npm run prepare:content && npx quartz build --serve",
+    "site:build": "npm run prepare:content && node ./quartz/bootstrap-cli.mjs build",
+    "site:dev": "npm run prepare:content && node ./quartz/bootstrap-cli.mjs build --serve",
     "check": "tsc --noEmit && npx prettier . --check",
     "format": "npx prettier . --write",
     "test": "tsx --test",

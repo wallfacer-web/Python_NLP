@@ -39,7 +39,7 @@ jobs:
         run: ./scripts/export-public-content.ps1
 
       - name: Build site
-        run: npx quartz build
+        run: node ./quartz/bootstrap-cli.mjs build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
